@@ -6,7 +6,7 @@ public class Findzero {
 			for (int j = 0; j < array2d[i].length; j++) {
 				if (array2d[i][j] == 0) {
 					System.out.println("R_Zero("+i+","+j+")");
-					break;
+					return;
 				}
 			}
 		}
@@ -17,7 +17,7 @@ public class Findzero {
 			for (int j = 0; j < array2d[i].length; j++) {
 				if (array2d[i][j] == 0) {
 					System.out.println("R_left("+i+","+(j-1)+")");
-					break;
+					return;
 				}
 			}
 		}
@@ -28,7 +28,7 @@ public class Findzero {
 			for (int j = 0; j < array2d[i].length; j++) {
 				if (array2d[i][j] == 0) {
 					System.out.println("R_right("+i+","+(j+1)+")");
-					break;
+					return;
 				}
 			}
 		}
@@ -39,7 +39,7 @@ public class Findzero {
 			for (int j = 0; j < array2d[i].length; j++) {
 				if (array2d[i][j] == 0) {
 					System.out.println("R_left("+(i-1)+","+j+")");
-					break;
+					return;
 				}
 			}
 		}
@@ -50,7 +50,7 @@ public class Findzero {
 			for (int j = 0; j < array2d[i].length; j++) {
 				if (array2d[i][j] == 0) {
 					System.out.println("R_left("+(i+1)+","+j+")");
-					break;
+					return;
 				}
 			}
 		}
